@@ -8130,7 +8130,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x00000000080445c0                . = ALIGN (0x4)
                 0x00000000080445c0                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0xa28 load address 0x00000000080445c0
+.data           0x0000000020000000      0xa48 load address 0x00000000080445c0
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -8166,334 +8166,335 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .data          0x00000000200002bc        0x5 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.o
                 0x00000000200002bc                uwTickPrio
                 0x00000000200002c0                uwTickFreq
- .data          0x00000000200002c1        0x1 Thirdparty\VL53L1\Application_VL53L1.o
- *fill*         0x00000000200002c2        0x2 
- .data          0x00000000200002c4       0x2c Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api.o
+ *fill*         0x00000000200002c1        0x3 
+ .data          0x00000000200002c4       0x1d Thirdparty\VL53L1\Application_VL53L1.o
+ *fill*         0x00000000200002e1        0x3 
+ .data          0x00000000200002e4       0x2c Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api.o
  *(.data*)
  .data.__malloc_av_
-                0x00000000200002f0      0x408 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
-                0x00000000200002f0                __malloc_av_
+                0x0000000020000310      0x408 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
+                0x0000000020000310                __malloc_av_
  .data.__malloc_sbrk_base
-                0x00000000200006f8        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
-                0x00000000200006f8                __malloc_sbrk_base
+                0x0000000020000718        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
+                0x0000000020000718                __malloc_sbrk_base
  .data.__malloc_trim_threshold
-                0x00000000200006fc        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
-                0x00000000200006fc                __malloc_trim_threshold
- .data.__sglue  0x0000000020000700        0xc C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-findfp.o)
-                0x0000000020000700                __sglue
+                0x000000002000071c        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
+                0x000000002000071c                __malloc_trim_threshold
+ .data.__sglue  0x0000000020000720        0xc C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-findfp.o)
+                0x0000000020000720                __sglue
  .data.__global_locale
-                0x000000002000070c      0x16c C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-locale.o)
-                0x000000002000070c                __global_locale
+                0x000000002000072c      0x16c C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-locale.o)
+                0x000000002000072c                __global_locale
  .data._impure_data
-                0x0000000020000878      0x120 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-impure.o)
-                0x0000000020000878                _impure_data
+                0x0000000020000898      0x120 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-impure.o)
+                0x0000000020000898                _impure_data
  .data._impure_ptr
-                0x0000000020000998        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-impure.o)
-                0x0000000020000998                _impure_ptr
+                0x00000000200009b8        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-impure.o)
+                0x00000000200009b8                _impure_ptr
  .data.__atexit_recursive_mutex
-                0x000000002000099c        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-__call_atexit.o)
-                0x000000002000099c                __atexit_recursive_mutex
+                0x00000000200009bc        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-__call_atexit.o)
+                0x00000000200009bc                __atexit_recursive_mutex
  *(.RamFunc)
- .RamFunc       0x00000000200009a0       0x88 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.o
+ .RamFunc       0x00000000200009c0       0x88 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.o
  *(.RamFunc*)
-                0x0000000020000a28                . = ALIGN (0x4)
-                0x0000000020000a28                _edata = .
+                0x0000000020000a48                . = ALIGN (0x4)
+                0x0000000020000a48                _edata = .
 
-.igot.plt       0x0000000020000a28        0x0 load address 0x0000000008044fe8
- .igot.plt      0x0000000020000a28        0x0 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v6-m/nofp/crtbegin.o
+.igot.plt       0x0000000020000a48        0x0 load address 0x0000000008045008
+ .igot.plt      0x0000000020000a48        0x0 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.mySection      0x0000000020000a28        0x6 load address 0x0000000008044fe8
- .mySection     0x0000000020000a28        0x6 BOS\BOS_freertos.o
-                0x0000000020000a30                . = ALIGN (0x4)
+.mySection      0x0000000020000a48        0x6 load address 0x0000000008045008
+ .mySection     0x0000000020000a48        0x6 BOS\BOS_freertos.o
+                0x0000000020000a50                . = ALIGN (0x4)
 
-.bss            0x0000000020000a30    0x1b8a4 load address 0x0000000008044fee
-                0x0000000020000a30                _sbss = .
-                0x0000000020000a30                __bss_start__ = _sbss
+.bss            0x0000000020000a50    0x1b8f4 load address 0x000000000804500e
+                0x0000000020000a50                _sbss = .
+                0x0000000020000a50                __bss_start__ = _sbss
  *(.bss)
- .bss           0x0000000020000a30       0x1c C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v6-m/nofp/crtbegin.o
- *fill*         0x0000000020000a4c        0x4 
- .bss           0x0000000020000a50      0xab0 BOS\BOS.o
-                0x0000000020000aa0                Output_Port_Array
-                0x0000000020000aa2                Activate_CLI_For_First_Time_Flag
-                0x0000000020000aa3                Read_In_CLI_Task_Flag
-                0x0000000020000aa4                MSG_Buffer_Index_Start
-                0x0000000020000aac                MSG_Buffer_Index_End
-                0x0000000020000ab4                MSG_Buffer
-                0x0000000020001144                Process_Message_Buffer
-                0x0000000020001149                Process_Message_Buffer_Index_Start
-                0x000000002000114a                Process_Message_Buffer_Index_End
-                0x000000002000114c                index_input
-                0x0000000020001154                index_process
-                0x000000002000115c                index_dma
-                0x0000000020001174                CLI_Data
-                0x0000000020001175                port_DMA
-                0x0000000020001178                BOSMessaging
-                0x0000000020001180                BOS
-                0x000000002000119c                indMode
-                0x000000002000119d                ACK_FLAG
-                0x000000002000119e                rejected_FLAG
-                0x000000002000119f                numOfBosCommands
-                0x00000000200011a0                portStatus
-                0x00000000200011a8                neighbors
-                0x00000000200011c0                neighbors2
-                0x00000000200011d8                bcastRoutes
-                0x000000002000120c                AddBcastPayload
-                0x0000000020001210                groupAlias
-                0x0000000020001274                routeDist
-                0x0000000020001278                routePrev
-                0x000000002000127c                moduleAlias
-                0x000000002000129c                broadcastResponse
-                0x00000000200012a0                groupModules
-                0x00000000200012a4                cMessage
-                0x00000000200013f4                message
-                0x000000002000142c                messageLength
-                0x0000000020001434                messageParams
-                0x0000000020001462                cRxedChar
-                0x0000000020001463                longMessage
-                0x0000000020001464                longMessageLastPtr
-                0x0000000020001466                responseStatus
-                0x0000000020001467                bcastID
-                0x0000000020001468                PcPort
-                0x0000000020001469                BOS_initialized
-                0x000000002000146c                BOS_var_reg
-                0x00000000200014e8                remoteBuffer
-                0x00000000200014f0                CLI_LOW_Baudrate_Flag
- .bss           0x0000000020001500      0x1b6 BOS\BOS_CLI.o
-                0x0000000020001550                snippets
-                0x00000000200015b4                numOfRecordedSnippets
-                0x00000000200015b8                pcWelcomePortMessage
- *fill*         0x00000000200016b6        0x2 
- .bss           0x00000000200016b8       0xfe BOS\BOS_CLIcommands.o
- *fill*         0x00000000200017b6        0x2 
- .bss           0x00000000200017b8      0x566 BOS\BOS_dma.o
-                0x0000000020001808                Rx_Data
-                0x0000000020001810                UARTRxBuf
-                0x0000000020001c90                crcBuffer
-                0x0000000020001cc8                UARTRxBufIndex
-                0x0000000020001cd0                dmaStreamDst
-                0x0000000020001ce8                dmaStreamCount
-                0x0000000020001d00                dmaStreamTotal
-                0x0000000020001d18                MsgDMAStopped
- *fill*         0x0000000020001d1e        0x2 
- .bss           0x0000000020001d20      0x1a0 BOS\BOS_freertos.o
-                0x0000000020001d70                finalMatrix
-                0x0000000020001db0                nonProcessingParameter
-                0x0000000020001dc4                ProcessingParameter
-                0x0000000020001dd8                twoDMatrix
-                0x0000000020001e50                perviousCharacter
-                0x0000000020001e51                numCommandParameters
-                0x0000000020001e52                digitTheCommand
-                0x0000000020001e53                finalMatrixIndex
-                0x0000000020001e54                twoDMatrixIndex
-                0x0000000020001e55                counter
-                0x0000000020001e56                desiredArray
-                0x0000000020001e57                nonProcessingParameterIndex
-                0x0000000020001e58                processingParameterIndex
-                0x0000000020001e59                Monitor_index
-                0x0000000020001e5a                WakeupFromStopFlag
-                0x0000000020001e60                defaultTaskHandle
-                0x0000000020001e64                UserTaskHandle
-                0x0000000020001e68                BackEndTaskHandle
-                0x0000000020001e6c                xCommandConsoleTaskHandle
-                0x0000000020001e70                P1MsgTaskHandle
-                0x0000000020001e74                P2MsgTaskHandle
-                0x0000000020001e78                P3MsgTaskHandle
-                0x0000000020001e7c                P4MsgTaskHandle
-                0x0000000020001e80                P5MsgTaskHandle
-                0x0000000020001e84                P6MsgTaskHandle
-                0x0000000020001e88                PxRxSemaphoreHandle
-                0x0000000020001ea4                PxTxSemaphoreHandle
- .bss           0x0000000020001ec0       0x70 BOS\BOS_messaging.o
-                0x0000000020001f10                totalnumberoftransmiitedmesg
-                0x0000000020001f14                RemoteResponseFlag
-                0x0000000020001f15                numOfElement
-                0x0000000020001f18                RemoteResponseBuffer
-                0x0000000020001f28                route
- .bss           0x0000000020001f30      0x282 BOS\BOS_msgparser.o
-                0x0000000020001f80                Accepted_Messages
-                0x0000000020001f82                Rejected_Messages
-                0x0000000020001f84                Message_counter
-                0x0000000020001f88                Calculate_CRC_Buffer
-                0x0000000020001fc0                stackWaterMark
-                0x0000000020001fc2                rejectedMsg
-                0x0000000020001fc4                acceptedMsg
-                0x0000000020001fc6                timedoutMsg
-                0x0000000020001fc8                ADCPort
-                0x0000000020001fca                ADCSide
-                0x0000000020001fcc                InternalVoltageReferance
-                0x0000000020001fd0                InternalTemperature
-                0x0000000020001fd4                ADCPercentage
-                0x0000000020001fd8                ADCValue
-                0x0000000020001fdc                totalnumberofrecevedmesg
-                0x0000000020001fe0                packetStart
-                0x0000000020001fe4                packetEnd
-                0x0000000020001fe8                packetLength
-                0x0000000020001fec                parseStart
-                0x0000000020001ff0                PortSelect
-                0x0000000020001ff1                PinSelect
-                0x0000000020001ff4                defalt_data
-                0x0000000020002014                RemoteDataBuffer
-                0x000000002000203c                MBmessageParams
- *fill*         0x00000000200021b2        0x6 
- .bss           0x00000000200021b8     0x29d0 P08R7\P08R7.o
-                0x0000000020002208                dev
-                0x0000000020004728                InterruptMode_User
-                0x000000002000472c                dynamicZone_s_User
-                0x0000000020004730                ToFStructure_User
-                0x00000000200047ac                statusD
-                0x00000000200047b0                huart1
-                0x0000000020004844                huart2
-                0x00000000200048d8                huart3
-                0x000000002000496c                huart4
-                0x0000000020004a00                huart5
-                0x0000000020004a94                huart6
-                0x0000000020004b28                handleNewReadyData
-                0x0000000020004b2c                P08R7_range
-                0x0000000020004b30                port1
-                0x0000000020004b31                module1
-                0x0000000020004b32                port2
-                0x0000000020004b33                module2
-                0x0000000020004b34                mode2
-                0x0000000020004b35                mode1
-                0x0000000020004b38                Numofsamples1
-                0x0000000020004b3c                timeout1
-                0x0000000020004b40                port3
-                0x0000000020004b41                module3
-                0x0000000020004b42                mode3
-                0x0000000020004b44                Numofsamples3
-                0x0000000020004b48                timeout3
-                0x0000000020004b4c                ToFHandle
-                0x0000000020004b50                tofPeriod
-                0x0000000020004b54                t0
-                0x0000000020004b58                tofMode
-                0x0000000020004b59                tofState
-                0x0000000020004b5c                xTimerTof
-                0x0000000020004b60                coun
-                0x0000000020004b62                Dist
-                0x0000000020004b64                flag
- .bss           0x0000000020004b88      0x764 P08R7\P08R7_dma.o
-                0x0000000020004bd8                msgRxDMA
-                0x0000000020004e18                msgTxDMA
-                0x0000000020004f38                streamDMA
-                0x0000000020005178                frontendDMA
-                0x0000000020005298                DMAMUXRx
-                0x00000000200052b0                DMAMUXTx
-                0x00000000200052c8                hcrc
- .bss           0x00000000200052ec       0x52 P08R7\P08R7_eeprom.o
-                0x000000002000533c                DataVar
- *fill*         0x000000002000533e        0x2 
- .bss           0x0000000020005340       0xa4 P08R7\P08R7_i2c.o
-                0x0000000020005390                hi2c2
- .bss           0x00000000200053e4      0x163 P08R7\P08R7_inputs.o
-                0x0000000020005434                button
-                0x0000000020005474                pressCounter
-                0x0000000020005490                releaseCounter
-                0x00000000200054ac                dblCounter
-                0x00000000200054b3                needToDelayButtonStateReset
-                0x00000000200054b4                delayButtonStateReset
-                0x00000000200054b8                hadc
-                0x000000002000551c                sConfig
-                0x0000000020005528                Channel
-                0x000000002000552c                ADCchannelvalue
-                0x0000000020005534                ADC_value_temp
-                0x0000000020005536                ADC_value_Vref
-                0x0000000020005538                ADC_flag
-                0x0000000020005539                Rank_t
-                0x000000002000553c                percentage
-                0x0000000020005540                current
-                0x0000000020005544                flag_ADC_Select
- *fill*         0x0000000020005547        0x1 
- .bss           0x0000000020005548       0x7d P08R7\P08R7_rtc.o
-                0x0000000020005598                RtcHandle
-                0x00000000200055c4                bootStatus
- *fill*         0x00000000200055c5        0x3 
- .bss           0x00000000200055c8      0x10c P08R7\P08R7_timers.o
-                0x0000000020005618                GPIO_InitStruct
-                0x000000002000562c                htim16
-                0x0000000020005678                htim17
-                0x00000000200056c4                hiwdg
- .bss           0x00000000200056d4      0x294 P08R7\P08R7_uart.o
-                0x0000000020005724                arrayPortsDir
-                0x0000000020005728                hdma_usart1_rx
-                0x0000000020005788                hdma_usart2_rx
-                0x00000000200057e8                hdma_usart3_rx
-                0x0000000020005848                hdma_usart4_rx
-                0x00000000200058a8                hdma_usart5_rx
-                0x0000000020005908                hdma_usart6_rx
- .bss           0x0000000020005968      0x2c5 Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\FreeRTOS_CLI.o
- *fill*         0x0000000020005c2d        0x3 
- .bss           0x0000000020005c30    0x15fb0 Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\portable\MemMang\heap_4.o
- .bss           0x000000002001bbe0       0x40 Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\queue.o
-                0x000000002001bbe0                xQueueRegistry
- .bss           0x000000002001bc20      0x134 Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\tasks.o
-                0x000000002001bc20                pxCurrentTCB
- .bss           0x000000002001bd54       0x3c Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\timers.o
- .bss           0x000000002001bd90        0x4 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.o
-                0x000000002001bd90                uwTick
- .bss           0x000000002001bd94       0x1c Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.o
-                0x000000002001bd94                pFlash
- .bss           0x000000002001bdb0        0xb Thirdparty\VL53L1\Application_VL53L1.o
-                0x000000002001bdb0                status
-                0x000000002001bdb4                IntCount_ToF
- *fill*         0x000000002001bdbb        0x1 
- .bss           0x000000002001bdbc      0x208 Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform.o
-                0x000000002001bdbc                i2creadCount
-                0x000000002001bdc0                i2cwriteCount
-                0x000000002001bdc4                SPI2C_Buffer
-                0x000000002001bec4                _I2CBuffer
+ .bss           0x0000000020000a50       0x1c C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v6-m/nofp/crtbegin.o
+ *fill*         0x0000000020000a6c        0x4 
+ .bss           0x0000000020000a70      0xab0 BOS\BOS.o
+                0x0000000020000ac0                Output_Port_Array
+                0x0000000020000ac2                Activate_CLI_For_First_Time_Flag
+                0x0000000020000ac3                Read_In_CLI_Task_Flag
+                0x0000000020000ac4                MSG_Buffer_Index_Start
+                0x0000000020000acc                MSG_Buffer_Index_End
+                0x0000000020000ad4                MSG_Buffer
+                0x0000000020001164                Process_Message_Buffer
+                0x0000000020001169                Process_Message_Buffer_Index_Start
+                0x000000002000116a                Process_Message_Buffer_Index_End
+                0x000000002000116c                index_input
+                0x0000000020001174                index_process
+                0x000000002000117c                index_dma
+                0x0000000020001194                CLI_Data
+                0x0000000020001195                port_DMA
+                0x0000000020001198                BOSMessaging
+                0x00000000200011a0                BOS
+                0x00000000200011bc                indMode
+                0x00000000200011bd                ACK_FLAG
+                0x00000000200011be                rejected_FLAG
+                0x00000000200011bf                numOfBosCommands
+                0x00000000200011c0                portStatus
+                0x00000000200011c8                neighbors
+                0x00000000200011e0                neighbors2
+                0x00000000200011f8                bcastRoutes
+                0x000000002000122c                AddBcastPayload
+                0x0000000020001230                groupAlias
+                0x0000000020001294                routeDist
+                0x0000000020001298                routePrev
+                0x000000002000129c                moduleAlias
+                0x00000000200012bc                broadcastResponse
+                0x00000000200012c0                groupModules
+                0x00000000200012c4                cMessage
+                0x0000000020001414                message
+                0x000000002000144c                messageLength
+                0x0000000020001454                messageParams
+                0x0000000020001482                cRxedChar
+                0x0000000020001483                longMessage
+                0x0000000020001484                longMessageLastPtr
+                0x0000000020001486                responseStatus
+                0x0000000020001487                bcastID
+                0x0000000020001488                PcPort
+                0x0000000020001489                BOS_initialized
+                0x000000002000148c                BOS_var_reg
+                0x0000000020001508                remoteBuffer
+                0x0000000020001510                CLI_LOW_Baudrate_Flag
+ .bss           0x0000000020001520      0x1b6 BOS\BOS_CLI.o
+                0x0000000020001570                snippets
+                0x00000000200015d4                numOfRecordedSnippets
+                0x00000000200015d8                pcWelcomePortMessage
+ *fill*         0x00000000200016d6        0x2 
+ .bss           0x00000000200016d8       0xfe BOS\BOS_CLIcommands.o
+ *fill*         0x00000000200017d6        0x2 
+ .bss           0x00000000200017d8      0x566 BOS\BOS_dma.o
+                0x0000000020001828                Rx_Data
+                0x0000000020001830                UARTRxBuf
+                0x0000000020001cb0                crcBuffer
+                0x0000000020001ce8                UARTRxBufIndex
+                0x0000000020001cf0                dmaStreamDst
+                0x0000000020001d08                dmaStreamCount
+                0x0000000020001d20                dmaStreamTotal
+                0x0000000020001d38                MsgDMAStopped
+ *fill*         0x0000000020001d3e        0x2 
+ .bss           0x0000000020001d40      0x1a0 BOS\BOS_freertos.o
+                0x0000000020001d90                finalMatrix
+                0x0000000020001dd0                nonProcessingParameter
+                0x0000000020001de4                ProcessingParameter
+                0x0000000020001df8                twoDMatrix
+                0x0000000020001e70                perviousCharacter
+                0x0000000020001e71                numCommandParameters
+                0x0000000020001e72                digitTheCommand
+                0x0000000020001e73                finalMatrixIndex
+                0x0000000020001e74                twoDMatrixIndex
+                0x0000000020001e75                counter
+                0x0000000020001e76                desiredArray
+                0x0000000020001e77                nonProcessingParameterIndex
+                0x0000000020001e78                processingParameterIndex
+                0x0000000020001e79                Monitor_index
+                0x0000000020001e7a                WakeupFromStopFlag
+                0x0000000020001e80                defaultTaskHandle
+                0x0000000020001e84                UserTaskHandle
+                0x0000000020001e88                BackEndTaskHandle
+                0x0000000020001e8c                xCommandConsoleTaskHandle
+                0x0000000020001e90                P1MsgTaskHandle
+                0x0000000020001e94                P2MsgTaskHandle
+                0x0000000020001e98                P3MsgTaskHandle
+                0x0000000020001e9c                P4MsgTaskHandle
+                0x0000000020001ea0                P5MsgTaskHandle
+                0x0000000020001ea4                P6MsgTaskHandle
+                0x0000000020001ea8                PxRxSemaphoreHandle
+                0x0000000020001ec4                PxTxSemaphoreHandle
+ .bss           0x0000000020001ee0       0x70 BOS\BOS_messaging.o
+                0x0000000020001f30                totalnumberoftransmiitedmesg
+                0x0000000020001f34                RemoteResponseFlag
+                0x0000000020001f35                numOfElement
+                0x0000000020001f38                RemoteResponseBuffer
+                0x0000000020001f48                route
+ .bss           0x0000000020001f50      0x282 BOS\BOS_msgparser.o
+                0x0000000020001fa0                Accepted_Messages
+                0x0000000020001fa2                Rejected_Messages
+                0x0000000020001fa4                Message_counter
+                0x0000000020001fa8                Calculate_CRC_Buffer
+                0x0000000020001fe0                stackWaterMark
+                0x0000000020001fe2                rejectedMsg
+                0x0000000020001fe4                acceptedMsg
+                0x0000000020001fe6                timedoutMsg
+                0x0000000020001fe8                ADCPort
+                0x0000000020001fea                ADCSide
+                0x0000000020001fec                InternalVoltageReferance
+                0x0000000020001ff0                InternalTemperature
+                0x0000000020001ff4                ADCPercentage
+                0x0000000020001ff8                ADCValue
+                0x0000000020001ffc                totalnumberofrecevedmesg
+                0x0000000020002000                packetStart
+                0x0000000020002004                packetEnd
+                0x0000000020002008                packetLength
+                0x000000002000200c                parseStart
+                0x0000000020002010                PortSelect
+                0x0000000020002011                PinSelect
+                0x0000000020002014                defalt_data
+                0x0000000020002034                RemoteDataBuffer
+                0x000000002000205c                MBmessageParams
+ *fill*         0x00000000200021d2        0x6 
+ .bss           0x00000000200021d8     0x29d0 P08R7\P08R7.o
+                0x0000000020002228                dev
+                0x0000000020004748                InterruptMode_User
+                0x000000002000474c                dynamicZone_s_User
+                0x0000000020004750                ToFStructure_User
+                0x00000000200047cc                statusD
+                0x00000000200047d0                huart1
+                0x0000000020004864                huart2
+                0x00000000200048f8                huart3
+                0x000000002000498c                huart4
+                0x0000000020004a20                huart5
+                0x0000000020004ab4                huart6
+                0x0000000020004b48                handleNewReadyData
+                0x0000000020004b4c                P08R7_range
+                0x0000000020004b50                port1
+                0x0000000020004b51                module1
+                0x0000000020004b52                port2
+                0x0000000020004b53                module2
+                0x0000000020004b54                mode2
+                0x0000000020004b55                mode1
+                0x0000000020004b58                Numofsamples1
+                0x0000000020004b5c                timeout1
+                0x0000000020004b60                port3
+                0x0000000020004b61                module3
+                0x0000000020004b62                mode3
+                0x0000000020004b64                Numofsamples3
+                0x0000000020004b68                timeout3
+                0x0000000020004b6c                ToFHandle
+                0x0000000020004b70                tofPeriod
+                0x0000000020004b74                t0
+                0x0000000020004b78                tofMode
+                0x0000000020004b79                tofState
+                0x0000000020004b7c                xTimerTof
+                0x0000000020004b80                coun
+                0x0000000020004b82                Dist
+                0x0000000020004b84                flag
+ .bss           0x0000000020004ba8      0x764 P08R7\P08R7_dma.o
+                0x0000000020004bf8                msgRxDMA
+                0x0000000020004e38                msgTxDMA
+                0x0000000020004f58                streamDMA
+                0x0000000020005198                frontendDMA
+                0x00000000200052b8                DMAMUXRx
+                0x00000000200052d0                DMAMUXTx
+                0x00000000200052e8                hcrc
+ .bss           0x000000002000530c       0x52 P08R7\P08R7_eeprom.o
+                0x000000002000535c                DataVar
+ *fill*         0x000000002000535e        0x2 
+ .bss           0x0000000020005360       0xa4 P08R7\P08R7_i2c.o
+                0x00000000200053b0                hi2c2
+ .bss           0x0000000020005404      0x163 P08R7\P08R7_inputs.o
+                0x0000000020005454                button
+                0x0000000020005494                pressCounter
+                0x00000000200054b0                releaseCounter
+                0x00000000200054cc                dblCounter
+                0x00000000200054d3                needToDelayButtonStateReset
+                0x00000000200054d4                delayButtonStateReset
+                0x00000000200054d8                hadc
+                0x000000002000553c                sConfig
+                0x0000000020005548                Channel
+                0x000000002000554c                ADCchannelvalue
+                0x0000000020005554                ADC_value_temp
+                0x0000000020005556                ADC_value_Vref
+                0x0000000020005558                ADC_flag
+                0x0000000020005559                Rank_t
+                0x000000002000555c                percentage
+                0x0000000020005560                current
+                0x0000000020005564                flag_ADC_Select
+ *fill*         0x0000000020005567        0x1 
+ .bss           0x0000000020005568       0x7d P08R7\P08R7_rtc.o
+                0x00000000200055b8                RtcHandle
+                0x00000000200055e4                bootStatus
+ *fill*         0x00000000200055e5        0x3 
+ .bss           0x00000000200055e8      0x10c P08R7\P08R7_timers.o
+                0x0000000020005638                GPIO_InitStruct
+                0x000000002000564c                htim16
+                0x0000000020005698                htim17
+                0x00000000200056e4                hiwdg
+ .bss           0x00000000200056f4      0x294 P08R7\P08R7_uart.o
+                0x0000000020005744                arrayPortsDir
+                0x0000000020005748                hdma_usart1_rx
+                0x00000000200057a8                hdma_usart2_rx
+                0x0000000020005808                hdma_usart3_rx
+                0x0000000020005868                hdma_usart4_rx
+                0x00000000200058c8                hdma_usart5_rx
+                0x0000000020005928                hdma_usart6_rx
+ .bss           0x0000000020005988      0x2c5 Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\FreeRTOS_CLI.o
+ *fill*         0x0000000020005c4d        0x3 
+ .bss           0x0000000020005c50    0x15fb0 Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\portable\MemMang\heap_4.o
+ .bss           0x000000002001bc00       0x40 Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\queue.o
+                0x000000002001bc00                xQueueRegistry
+ .bss           0x000000002001bc40      0x134 Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\tasks.o
+                0x000000002001bc40                pxCurrentTCB
+ .bss           0x000000002001bd74       0x3c Thirdparty\Middleware\STM32G0xx\FreeRTOS\Source\timers.o
+ .bss           0x000000002001bdb0        0x4 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.o
+                0x000000002001bdb0                uwTick
+ .bss           0x000000002001bdb4       0x1c Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.o
+                0x000000002001bdb4                pFlash
+ .bss           0x000000002001bdd0       0x5b Thirdparty\VL53L1\Application_VL53L1.o
+                0x000000002001be20                status
+                0x000000002001be24                IntCount_ToF
+ *fill*         0x000000002001be2b        0x1 
+ .bss           0x000000002001be2c      0x208 Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform.o
+                0x000000002001be2c                i2creadCount
+                0x000000002001be30                i2cwriteCount
+                0x000000002001be34                SPI2C_Buffer
+                0x000000002001bf34                _I2CBuffer
  *(.bss*)
  .bss.__malloc_current_mallinfo
-                0x000000002001bfc4       0x28 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
-                0x000000002001bfc4                __malloc_current_mallinfo
+                0x000000002001c034       0x28 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
+                0x000000002001c034                __malloc_current_mallinfo
  .bss.__malloc_max_sbrked_mem
-                0x000000002001bfec        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
-                0x000000002001bfec                __malloc_max_sbrked_mem
+                0x000000002001c05c        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
+                0x000000002001c05c                __malloc_max_sbrked_mem
  .bss.__malloc_max_total_mem
-                0x000000002001bff0        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
-                0x000000002001bff0                __malloc_max_total_mem
+                0x000000002001c060        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
+                0x000000002001c060                __malloc_max_total_mem
  .bss.__malloc_top_pad
-                0x000000002001bff4        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
-                0x000000002001bff4                __malloc_top_pad
- .bss.__sf      0x000000002001bff8      0x138 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-findfp.o)
-                0x000000002001bff8                __sf
+                0x000000002001c064        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-mallocr.o)
+                0x000000002001c064                __malloc_top_pad
+ .bss.__sf      0x000000002001c068      0x138 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-findfp.o)
+                0x000000002001c068                __sf
  .bss.__stdio_exit_handler
-                0x000000002001c130        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-findfp.o)
-                0x000000002001c130                __stdio_exit_handler
- .bss.errno     0x000000002001c134        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-reent.o)
-                0x000000002001c134                errno
+                0x000000002001c1a0        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-findfp.o)
+                0x000000002001c1a0                __stdio_exit_handler
+ .bss.errno     0x000000002001c1a4        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-reent.o)
+                0x000000002001c1a4                errno
  .bss.__lock___atexit_recursive_mutex
-                0x000000002001c138        0x1 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-lock.o)
-                0x000000002001c138                __lock___atexit_recursive_mutex
+                0x000000002001c1a8        0x1 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-lock.o)
+                0x000000002001c1a8                __lock___atexit_recursive_mutex
  .bss.__lock___malloc_recursive_mutex
-                0x000000002001c139        0x1 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-lock.o)
-                0x000000002001c139                __lock___malloc_recursive_mutex
+                0x000000002001c1a9        0x1 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-lock.o)
+                0x000000002001c1a9                __lock___malloc_recursive_mutex
  .bss.__lock___sfp_recursive_mutex
-                0x000000002001c13a        0x1 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-lock.o)
-                0x000000002001c13a                __lock___sfp_recursive_mutex
- *fill*         0x000000002001c13b        0x1 
- .bss.__atexit  0x000000002001c13c        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-__call_atexit.o)
-                0x000000002001c13c                __atexit
+                0x000000002001c1aa        0x1 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-lock.o)
+                0x000000002001c1aa                __lock___sfp_recursive_mutex
+ *fill*         0x000000002001c1ab        0x1 
+ .bss.__atexit  0x000000002001c1ac        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-__call_atexit.o)
+                0x000000002001c1ac                __atexit
  .bss.__atexit0
-                0x000000002001c140      0x190 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-__atexit.o)
-                0x000000002001c140                __atexit0
+                0x000000002001c1b0      0x190 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(libc_a-__atexit.o)
+                0x000000002001c1b0                __atexit0
  .bss.heap_end.0
-                0x000000002001c2d0        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
+                0x000000002001c340        0x4 C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
  *(COMMON)
-                0x000000002001c2d4                . = ALIGN (0x4)
-                0x000000002001c2d4                _ebss = .
-                0x000000002001c2d4                __bss_end__ = _ebss
+                0x000000002001c344                . = ALIGN (0x4)
+                0x000000002001c344                _ebss = .
+                0x000000002001c344                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002001c2d4      0x604 load address 0x0000000008044fee
-                0x000000002001c2d8                . = ALIGN (0x8)
- *fill*         0x000000002001c2d4        0x4 
-                0x000000002001c2d8                PROVIDE (end = .)
+                0x000000002001c344      0x604 load address 0x000000000804500e
+                0x000000002001c348                . = ALIGN (0x8)
+ *fill*         0x000000002001c344        0x4 
+                0x000000002001c348                PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
-                0x000000002001c4d8                . = (. + _Min_Heap_Size)
- *fill*         0x000000002001c2d8      0x200 
-                0x000000002001c8d8                . = (. + _Min_Stack_Size)
- *fill*         0x000000002001c4d8      0x400 
-                0x000000002001c8d8                . = ALIGN (0x8)
+                0x000000002001c548                . = (. + _Min_Heap_Size)
+ *fill*         0x000000002001c348      0x200 
+                0x000000002001c948                . = (. + _Min_Stack_Size)
+ *fill*         0x000000002001c548      0x400 
+                0x000000002001c948                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -8980,7 +8981,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .comment       0x0000000000000043       0x44 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_zone_presets.o
  .comment       0x0000000000000043       0x44 User\main.o
 
-.debug_info     0x0000000000000000    0x7694f
+.debug_info     0x0000000000000000    0x76b4a
  .debug_info    0x0000000000000000     0x35bc BOS\BOS.o
  .debug_info    0x00000000000035bc     0x11cb BOS\BOS_CLI.o
  .debug_info    0x0000000000004787     0x3492 BOS\BOS_CLIcommands.o
@@ -9031,28 +9032,28 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_info    0x0000000000030791     0x2be4 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_tim.o
  .debug_info    0x0000000000033375     0x473b Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.o
  .debug_info    0x0000000000037ab0      0xfdb Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.o
- .debug_info    0x0000000000038a8b     0x538f Thirdparty\VL53L1\Application_VL53L1.o
- .debug_info    0x000000000003de1a     0x45f2 Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform.o
- .debug_info    0x000000000004240c     0x41da Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform_ipp.o
- .debug_info    0x00000000000465e6     0x791b Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api.o
- .debug_info    0x000000000004df01     0x878b Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_core.o
- .debug_info    0x000000000005668c     0x3298 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_preset_modes.o
- .debug_info    0x0000000000059924     0x6c70 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core.o
- .debug_info    0x0000000000060594      0x97c Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core_support.o
- .debug_info    0x0000000000060f10      0x6a5 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_dmax.o
- .debug_info    0x00000000000615b5      0xfa3 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen3.o
- .debug_info    0x0000000000062558     0x12ee Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen4.o
- .debug_info    0x0000000000063846      0x915 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_core.o
- .debug_info    0x000000000006415b     0x112d Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_funcs.o
- .debug_info    0x0000000000065288     0x4c45 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_nvm.o
- .debug_info    0x0000000000069ecd     0x662d Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_register_funcs.o
- .debug_info    0x00000000000704fa      0x790 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_sigma_estimate.o
- .debug_info    0x0000000000070c8a     0x42fa Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_wait.o
- .debug_info    0x0000000000074f84     0x11da Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_xtalk.o
- .debug_info    0x000000000007615e      0x51c Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_zone_presets.o
- .debug_info    0x000000000007667a      0x2d5 User\main.o
+ .debug_info    0x0000000000038a8b     0x558a Thirdparty\VL53L1\Application_VL53L1.o
+ .debug_info    0x000000000003e015     0x45f2 Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform.o
+ .debug_info    0x0000000000042607     0x41da Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform_ipp.o
+ .debug_info    0x00000000000467e1     0x791b Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api.o
+ .debug_info    0x000000000004e0fc     0x878b Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_core.o
+ .debug_info    0x0000000000056887     0x3298 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_preset_modes.o
+ .debug_info    0x0000000000059b1f     0x6c70 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core.o
+ .debug_info    0x000000000006078f      0x97c Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core_support.o
+ .debug_info    0x000000000006110b      0x6a5 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_dmax.o
+ .debug_info    0x00000000000617b0      0xfa3 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen3.o
+ .debug_info    0x0000000000062753     0x12ee Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen4.o
+ .debug_info    0x0000000000063a41      0x915 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_core.o
+ .debug_info    0x0000000000064356     0x112d Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_funcs.o
+ .debug_info    0x0000000000065483     0x4c45 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_nvm.o
+ .debug_info    0x000000000006a0c8     0x662d Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_register_funcs.o
+ .debug_info    0x00000000000706f5      0x790 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_sigma_estimate.o
+ .debug_info    0x0000000000070e85     0x42fa Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_wait.o
+ .debug_info    0x000000000007517f     0x11da Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_xtalk.o
+ .debug_info    0x0000000000076359      0x51c Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_zone_presets.o
+ .debug_info    0x0000000000076875      0x2d5 User\main.o
 
-.debug_abbrev   0x0000000000000000     0xa415
+.debug_abbrev   0x0000000000000000     0xa42d
  .debug_abbrev  0x0000000000000000      0x45f BOS\BOS.o
  .debug_abbrev  0x000000000000045f      0x2ae BOS\BOS_CLI.o
  .debug_abbrev  0x000000000000070d      0x34e BOS\BOS_CLIcommands.o
@@ -9103,26 +9104,26 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_abbrev  0x0000000000007019      0x285 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_tim.o
  .debug_abbrev  0x000000000000729e      0x30f Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.o
  .debug_abbrev  0x00000000000075ad      0x2d1 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.o
- .debug_abbrev  0x000000000000787e      0x350 Thirdparty\VL53L1\Application_VL53L1.o
- .debug_abbrev  0x0000000000007bce      0x2c7 Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform.o
- .debug_abbrev  0x0000000000007e95      0x1eb Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform_ipp.o
- .debug_abbrev  0x0000000000008080      0x35f Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api.o
- .debug_abbrev  0x00000000000083df      0x30c Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_core.o
- .debug_abbrev  0x00000000000086eb      0x1db Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_preset_modes.o
- .debug_abbrev  0x00000000000088c6      0x326 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core.o
- .debug_abbrev  0x0000000000008bec      0x226 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core_support.o
- .debug_abbrev  0x0000000000008e12      0x119 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_dmax.o
- .debug_abbrev  0x0000000000008f2b      0x205 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen3.o
- .debug_abbrev  0x0000000000009130      0x1ff Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen4.o
- .debug_abbrev  0x000000000000932f      0x1df Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_core.o
- .debug_abbrev  0x000000000000950e      0x1c1 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_funcs.o
- .debug_abbrev  0x00000000000096cf      0x29b Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_nvm.o
- .debug_abbrev  0x000000000000996a      0x277 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_register_funcs.o
- .debug_abbrev  0x0000000000009be1      0x182 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_sigma_estimate.o
- .debug_abbrev  0x0000000000009d63      0x26e Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_wait.o
- .debug_abbrev  0x0000000000009fd1      0x20f Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_xtalk.o
- .debug_abbrev  0x000000000000a1e0      0x135 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_zone_presets.o
- .debug_abbrev  0x000000000000a315      0x100 User\main.o
+ .debug_abbrev  0x000000000000787e      0x368 Thirdparty\VL53L1\Application_VL53L1.o
+ .debug_abbrev  0x0000000000007be6      0x2c7 Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform.o
+ .debug_abbrev  0x0000000000007ead      0x1eb Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform_ipp.o
+ .debug_abbrev  0x0000000000008098      0x35f Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api.o
+ .debug_abbrev  0x00000000000083f7      0x30c Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_core.o
+ .debug_abbrev  0x0000000000008703      0x1db Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_preset_modes.o
+ .debug_abbrev  0x00000000000088de      0x326 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core.o
+ .debug_abbrev  0x0000000000008c04      0x226 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core_support.o
+ .debug_abbrev  0x0000000000008e2a      0x119 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_dmax.o
+ .debug_abbrev  0x0000000000008f43      0x205 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen3.o
+ .debug_abbrev  0x0000000000009148      0x1ff Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen4.o
+ .debug_abbrev  0x0000000000009347      0x1df Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_core.o
+ .debug_abbrev  0x0000000000009526      0x1c1 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_funcs.o
+ .debug_abbrev  0x00000000000096e7      0x29b Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_nvm.o
+ .debug_abbrev  0x0000000000009982      0x277 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_register_funcs.o
+ .debug_abbrev  0x0000000000009bf9      0x182 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_sigma_estimate.o
+ .debug_abbrev  0x0000000000009d7b      0x26e Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_wait.o
+ .debug_abbrev  0x0000000000009fe9      0x20f Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_xtalk.o
+ .debug_abbrev  0x000000000000a1f8      0x135 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_zone_presets.o
+ .debug_abbrev  0x000000000000a32d      0x100 User\main.o
 
 .debug_aranges  0x0000000000000000     0x3b28
  .debug_aranges
@@ -9409,7 +9410,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_rnglists
                 0x0000000000002e2c       0x19 User\main.o
 
-.debug_line     0x0000000000000000    0x3dff3
+.debug_line     0x0000000000000000    0x3e01f
  .debug_line    0x0000000000000000     0x222b BOS\BOS.o
  .debug_line    0x000000000000222b      0xd21 BOS\BOS_CLI.o
  .debug_line    0x0000000000002f4c     0x184e BOS\BOS_CLIcommands.o
@@ -9460,26 +9461,26 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x00000000000221fd     0x38f5 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_tim.o
  .debug_line    0x0000000000025af2     0x31a7 Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.o
  .debug_line    0x0000000000028c99      0xa3c Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.o
- .debug_line    0x00000000000296d5     0x109f Thirdparty\VL53L1\Application_VL53L1.o
- .debug_line    0x000000000002a774      0x93b Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform.o
- .debug_line    0x000000000002b0af      0x500 Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform_ipp.o
- .debug_line    0x000000000002b5af     0x29e5 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api.o
- .debug_line    0x000000000002df94     0x3bbb Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_core.o
- .debug_line    0x0000000000031b4f     0x1087 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_preset_modes.o
- .debug_line    0x0000000000032bd6     0x2dd8 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core.o
- .debug_line    0x00000000000359ae      0x8a1 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core_support.o
- .debug_line    0x000000000003624f      0x517 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_dmax.o
- .debug_line    0x0000000000036766      0xc66 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen3.o
- .debug_line    0x00000000000373cc      0x9a1 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen4.o
- .debug_line    0x0000000000037d6d      0x8ed Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_core.o
- .debug_line    0x000000000003865a      0x691 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_funcs.o
- .debug_line    0x0000000000038ceb      0xd98 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_nvm.o
- .debug_line    0x0000000000039a83     0x2545 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_register_funcs.o
- .debug_line    0x000000000003bfc8      0x602 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_sigma_estimate.o
- .debug_line    0x000000000003c5ca      0x6f6 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_wait.o
- .debug_line    0x000000000003ccc0      0xccc Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_xtalk.o
- .debug_line    0x000000000003d98c      0x3c0 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_zone_presets.o
- .debug_line    0x000000000003dd4c      0x2a7 User\main.o
+ .debug_line    0x00000000000296d5     0x10cb Thirdparty\VL53L1\Application_VL53L1.o
+ .debug_line    0x000000000002a7a0      0x93b Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform.o
+ .debug_line    0x000000000002b0db      0x500 Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform_ipp.o
+ .debug_line    0x000000000002b5db     0x29e5 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api.o
+ .debug_line    0x000000000002dfc0     0x3bbb Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_core.o
+ .debug_line    0x0000000000031b7b     0x1087 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_api_preset_modes.o
+ .debug_line    0x0000000000032c02     0x2dd8 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core.o
+ .debug_line    0x00000000000359da      0x8a1 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_core_support.o
+ .debug_line    0x000000000003627b      0x517 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_dmax.o
+ .debug_line    0x0000000000036792      0xc66 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen3.o
+ .debug_line    0x00000000000373f8      0x9a1 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_algos_gen4.o
+ .debug_line    0x0000000000037d99      0x8ed Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_core.o
+ .debug_line    0x0000000000038686      0x691 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_hist_funcs.o
+ .debug_line    0x0000000000038d17      0xd98 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_nvm.o
+ .debug_line    0x0000000000039aaf     0x2545 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_register_funcs.o
+ .debug_line    0x000000000003bff4      0x602 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_sigma_estimate.o
+ .debug_line    0x000000000003c5f6      0x6f6 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_wait.o
+ .debug_line    0x000000000003ccec      0xccc Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_xtalk.o
+ .debug_line    0x000000000003d9b8      0x3c0 Thirdparty\VL53L1\vl53l1_Driver\vl53l1\vl53l1_zone_presets.o
+ .debug_line    0x000000000003dd78      0x2a7 User\main.o
 
 .debug_str      0x0000000000000000    0x1c1a1
  .debug_str     0x0000000000000000     0x1e51 BOS\BOS.o
@@ -9583,7 +9584,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_str     0x000000000001138f      0x1cb Thirdparty\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.o
                                         0xb6d (size before relaxing)
  .debug_str     0x000000000001155a      0x9e5 Thirdparty\VL53L1\Application_VL53L1.o
-                                       0x6172 (size before relaxing)
+                                       0x62e6 (size before relaxing)
  .debug_str     0x0000000000011f3f      0x22c Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform.o
                                        0x5640 (size before relaxing)
  .debug_str     0x000000000001216b      0x2ba Thirdparty\VL53L1\vl53l1_Driver\Src\vl53l1_platform_ipp.o
