@@ -109,13 +109,17 @@
 #define ToF_SENSOR_I2C_ADDRESS   0x52
 #define _WAITFORINT() 	         __WFI()
 
-#define TOF_PWR_Pin            GPIO_PIN_4
-#define TOF_PWR_GPIO_Port      GPIOE
-#define TOF_INT_Pin            GPIO_PIN_1
-#define TOF_INT_GPIO_Port      GPIOB
-#define TOF_INT_EXTI_IRQn      EXTI1_IRQn
-#define TOF_XSHUT_Pin          GPIO_PIN_5
-#define TOF_XSHUT_GPIO_Port    GPIOA
+#define TOF_I2C2_SDA_PORT            GPIOB
+#define TOF_I2C2_SDA_PIN             GPIO_PIN_14
+#define TOF_I2C2_SCL_PORT            GPIOB
+#define TOF_I2C2_SCL_PIN             GPIO_PIN_13
+//#define TOF_PWR_Pin                  GPIO_PIN_4
+//#define TOF_PWR_GPIO_Port            GPIOE
+#define TOF_INT_Pin                  GPIO_PIN_1
+#define TOF_INT_GPIO_Port            GPIOB
+#define TOF_INT_EXTI_IRQn            EXTI1_IRQn
+#define TOF_XSHUT_Pin                GPIO_PIN_5
+#define TOF_XSHUT_GPIO_Port          GPIOA
 
 /* VL53L1X definition */
 #define MIN_MEMS_PERIOD_MS				100
