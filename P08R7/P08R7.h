@@ -26,7 +26,7 @@
 #define modulePN    _P08R7
 
 /* Port-related definitions */
-#define NumOfPorts    6
+#define NumOfPorts    5
 #define P_PROG        P2            /* ST factory bootloader UART */
 /* Define available ports */
 #define _P1
