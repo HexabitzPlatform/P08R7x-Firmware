@@ -465,7 +465,7 @@ void RegisterModuleCLICommands(void) {
 /* --- Get the port for a given UART.
  */
 uint8_t GetPort(UART_HandleTypeDef *huart) {
-	if (huart->Instance == USART4)
+	if (huart->Instance == USART6)
 		return P1;
 	else if (huart->Instance == USART2)
 		return P2;
