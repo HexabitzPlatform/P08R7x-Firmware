@@ -1,30 +1,29 @@
 /*
- BitzOS (BOS) V0.3.6 - Copyright (C) 2017-2024 Hexabitz
+ BitzOS (BOS) V0.4.0 - Copyright (C) 2017-2025 Hexabitz
  All rights reserved
 
- File Name     : P08R7_timers.c
- Description   : Peripheral timers setup source file.
-
- Required MCU resources :
-
- >> Timer 14 for micro-sec delay.
- >> Timer 15 for milli-sec delay.
-
+ File Name  : P08R7_timers.c
+ Description: Configures timers and watchdog for delays and PWM.
+ Timers: TIM14 (usec), TIM15 (msec) .
+ IWDG: 500 ms timeout watchdog.
  */
 
-/* Includes ------------------------------------------------------------------*/
+/* Includes ****************************************************************/
 #include "BOS.h"
 
-/*----------------------------------------------------------------------------*/
-/* Configure Timers                                                              */
-/*----------------------------------------------------------------------------*/
+/* Exported Functions ******************************************************/
+void TIM_USEC_Init(void);
+void TIM_MSEC_Init(void);
+void MX_IWDG_Init(void);
 
-/* Variables ---------------------------------------------------------*/
-GPIO_InitTypeDef GPIO_InitStruct = {0};
+/* Exported Variables ******************************************************/
 TIM_HandleTypeDef htim16; /* micro-second delay counter */
 TIM_HandleTypeDef htim17; /* milli-second delay counter */
 IWDG_HandleTypeDef hiwdg;
 
+/***************************************************************************/
+/* Configure Timers ********************************************************/
+/***************************************************************************/
 /* IWDG init function */
 void MX_IWDG_Init(void){
 
@@ -41,9 +40,11 @@ void MX_IWDG_Init(void){
 	hiwdg.Init.Reload =1999;
 
 	HAL_IWDG_Init(&hiwdg);
+
 }
-/*  Micro-seconds timebase init function - TIM16 (16-bit)
- */
+
+/***************************************************************************/
+/* Micro-seconds timebase init function - TIM16 (16-bit) */
 void TIM_USEC_Init(void){
 
 	  __TIM16_CLK_ENABLE();
@@ -61,12 +62,8 @@ void TIM_USEC_Init(void){
 
 }
 
-/*-----------------------------------------------------------*/
-
-/*-----------------------------------------------------------*/
-
-/*  Milli-seconds timebase init function - TIM17 (16-bit)
- */
+/***************************************************************************/
+/* Milli-seconds timebase init function - TIM17 (16-bit) */
 void TIM_MSEC_Init(void){
 
 	  __TIM17_CLK_ENABLE();
@@ -82,10 +79,8 @@ void TIM_MSEC_Init(void){
 	  HAL_TIM_Base_Start(&htim17);
 }
 
-/*-----------------------------------------------------------*/
-
-/* --- Load and start micro-second delay counter --- 
- */
+/***************************************************************************/
+/* Load and start micro-second delay counter */
 void StartMicroDelay(uint16_t Delay){
 	uint32_t t0 =0;
 	
@@ -100,10 +95,8 @@ void StartMicroDelay(uint16_t Delay){
 	portEXIT_CRITICAL();
 }
 
-/*-----------------------------------------------------------*/
-
-/* --- Load and start milli-second delay counter --- 
- */
+/***************************************************************************/
+/* Load and start milli-second delay counter */
 void StartMilliDelay(uint16_t Delay){
 	uint32_t t0 =0;
 	
@@ -117,6 +110,6 @@ void StartMilliDelay(uint16_t Delay){
 
 	portEXIT_CRITICAL();
 }
-/*-----------------------------------------------------------*/
 
-/************************ (C) COPYRIGHT HEXABITZ *****END OF FILE****/
+/***************************************************************************/
+/***************** (C) COPYRIGHT HEXABITZ ***** END OF FILE ****************/
