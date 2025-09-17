@@ -26,7 +26,7 @@
 #define	MODULE_PN		_P08R7
 
 /* Port-related definitions */
-#define	NUM_OF_PORTS	6
+#define	NUM_OF_PORTS	5
 #define P_PROG        	P2            /* ST factory bootloader UART */
 
 /* Define available ports */
@@ -35,23 +35,20 @@
 #define _P3
 #define _P4
 #define _P5
-#define _P6
 
 /* Define Available USARTs */
 #define _USART1
 #define _USART2
 #define _USART3
-#define _USART4
 #define _USART5
 #define _USART6
 
 /* Port-UART mapping */
-#define UART_P1 &huart4
+#define UART_P1 &huart6
 #define UART_P2 &huart2
 #define UART_P3 &huart3
 #define UART_P4 &huart1
 #define UART_P5 &huart5
-#define UART_P6 &huart6
 
 /* Module-specific Hardware Definitions ************************************/
 /* Port Definitions */
@@ -116,7 +113,7 @@
 
 /* Indicator LED */
 #define _IND_LED_PORT        GPIOB
-#define _IND_LED_PIN         GPIO_PIN_7
+#define _IND_LED_PIN         GPIO_PIN_12
 
 /* Module-specific Macro Definitions ***************************************/
 #define ToF_SENSOR_I2C_ADDRESS 	    0x52
@@ -158,7 +155,7 @@ extern UART_HandleTypeDef huart6;
 extern void MX_USART1_UART_Init(void);
 extern void MX_USART2_UART_Init(void);
 extern void MX_USART3_UART_Init(void);
-extern void MX_USART4_UART_Init(void);
+//extern void MX_USART4_UART_Init(void);
 extern void MX_USART5_UART_Init(void);
 extern void MX_USART6_UART_Init(void);
 
