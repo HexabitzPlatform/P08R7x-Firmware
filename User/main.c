@@ -11,6 +11,10 @@
 
 /* Private variables *******************************************************/
 uint16_t Dis =0 ;
+float adcValue1 = 0;
+float adcValue2 = 0;
+float adcValue3 = 0;
+float adcValue4 = 0;
 /* Private Function Prototypes *********************************************/
 
 /* Main Function ***********************************************************/
@@ -28,10 +32,9 @@ int main(void){
 /* User Task */
 void UserTask(void *argument){
 
-	IND_ON();
 	/* put your code here, to run repeatedly. */
 	while(1){
-		 SampleTOF(&Dis);
+
 	}
 }
 
